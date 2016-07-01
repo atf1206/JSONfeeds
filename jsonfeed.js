@@ -32,31 +32,32 @@ var redditvideos = new Array('redditvideos', 'entertain', 10, 'https://www.reddi
 //var entp = new Array('entp', 'mbti', 10, 'http://www.reddit.com/r/entp/');
 //
 
+$(document).ready(function () {
+	$('ul.tabs li').click(function() {
+			var tab_id = $(this).attr('data-tab');
+		tab_id = window[tab_id];
 
-$('ul.tabs li').click(function() {
-		var tab_id = $(this).attr('data-tab');
-    tab_id = window[tab_id];
-
-		$('ul.' +tab_id[1]+ ' li').removeClass('current');
-    $(this).addClass('current');
-    
-    if (tab_id[1] == "learn") {
-      $('.learntab').removeClass('current');
-		  $("."+tab_id[0]).addClass('current');
-    }
-    else if (tab_id[1] == "jobs") {
-      $('.jobtab').removeClass('current');
-		  $("."+tab_id[0]).addClass('current');
-    }
-    else if (tab_id[0] == "nytimes"){
-      myGetNYTimes(tab_id);
-    }
-    else {
-      myGetJSON(tab_id);
-    }
-    
+			$('ul.' +tab_id[1]+ ' li').removeClass('current');
+		$(this).addClass('current');
+		
+		if (tab_id[1] == "learn") {
+		  $('.learntab').removeClass('current');
+			  $("."+tab_id[0]).addClass('current');
+		}
+		else if (tab_id[1] == "jobs") {
+		  $('.jobtab').removeClass('current');
+			  $("."+tab_id[0]).addClass('current');
+		}
+		else if (tab_id[0] == "nytimes"){
+		  myGetNYTimes(tab_id);
+		}
+		else {
+		  myGetJSON(tab_id);
+		}
+		
+		});
 	});
-
+	
 function myGetJSON(sourceArray) 
     {
     if(sourceArray[0]=='hackernews') 
