@@ -86,7 +86,7 @@ function myGetJSON(sourceArray)
             $("." +sourceArray[1]+ "content").empty();
             $.each(data.data.children.slice(0, sourceArray[2]), function (i, post) 
               {
-                $("." +sourceArray[1]+ "content").append("<a href='" +post.data.permalink+ "' rel='nofollow'><img src='http://www.jimmyr.com/cm.gif' border='0'></a>&nbsp; <a href='" +post.data.url+ "' rel='nofollow' class='bl'>" +post.data.title+ "</a><br>");
+                $("." +sourceArray[1]+ "content").append("<a href='" +post.data.permalink+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +post.data.url+ "' rel='nofollow' class='bl'>" +post.data.title+ "</a><br>");
                 $("." +sourceArray[1]+ "content").append("<div class='divider'></div>");
               }
             );
@@ -100,7 +100,7 @@ function hackerAppend(sourceArray, post, j) {
   $.getJSON(sourceArray[4] +post+ ".json?",
     function parseJSON(data) 
     {
-    $("." +sourceArray[1]+ "content").append("<a href='https://news.ycombinator.com/item?id=" +data.id+ "' rel='nofollow'><img src='http://www.jimmyr.com/cm.gif' border='0'></a>&nbsp; <a href='" +data.url+ "' rel='nofollow' class='bl'>" +data.title+ "</a><br>");
+    $("." +sourceArray[1]+ "content").append("<a href='https://news.ycombinator.com/item?id=" +data.id+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +data.url+ "' rel='nofollow' class='bl'>" +data.title+ "</a><br>");
     $("." +sourceArray[1]+ "content").append("<div class='divider'></div>");
     if (j == sourceArray[2]) {
       $("." +sourceArray[1]+ "content").append("<div class='source'>&nbsp;More at&nbsp;<a href='" +sourceArray[4]+ "' rel='nofollow' class='asource'>" +sourceArray[5]+ "</a></div>");
@@ -124,7 +124,7 @@ function myGetNYTimes(sourceArray)
       $("." +sourceArray[1]+ "content").empty();
       for (var i = 0; i < sourceArray[2]; i++) {
         //console.log(result["results"][i]["title"]);
-        $("." +sourceArray[1]+ "content").append("<a href='https://news.ycombinator.com/item?id=" +result["results"][i]["url"]+ "' rel='nofollow'><img src='http://www.jimmyr.com/cm.gif' border='0'></a>&nbsp; <a href='" +result["results"][i]["url"]+ "' rel='nofollow' class='bl'>" +result["results"][i]["title"]+ "</a><br>");
+        $("." +sourceArray[1]+ "content").append("<a href='https://news.ycombinator.com/item?id=" +result["results"][i]["url"]+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +result["results"][i]["url"]+ "' rel='nofollow' class='bl'>" +result["results"][i]["title"]+ "</a><br>");
         $("." +sourceArray[1]+ "content").append("<div class='divider'></div>");
       }
       $("." +sourceArray[1]+ "content").append("<div class='source'>&nbsp;More at&nbsp;<a href='" +sourceArray[2]+ "' rel='nofollow' class='asource'>" +sourceArray[3]+ "</a></div>");
