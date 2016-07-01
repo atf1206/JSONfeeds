@@ -3,16 +3,16 @@
 var nytimes = new Array('nytimes', 'news', 10, 'http://www.nytimes.com', 'NYTimes.com');
 var reddit = new Array('reddit', "news", 10, 'https://www.reddit.com/', 'Reddit.com');
 var reddittop = new Array('reddittop', 'news', 8, 'https://www.reddit.com/top', 'Reddit.com/r/top');
-var redditworld = new Array('redditworld', 'news', 8, 'http://www.reddit.com/r/worldnews/', 'Reddit.com/r/worldnews');
-var reddittech = new Array('reddittech', 'news', 8, 'http://www.reddit.com/r/technology/', 'Reddit.com/r/tech');
+var redditworld = new Array('redditworld', 'news', 8, 'https://www.reddit.com/r/worldnews/', 'Reddit.com/r/worldnews');
+var reddittech = new Array('reddittech', 'news', 8, 'https://www.reddit.com/r/technology/', 'Reddit.com/r/tech');
 // 1-2
-var redditprogramming = new Array('redditprogramming', 'code', 10, 'http://www.reddit.com/r/programming/', 'Reddit.com/r/programming');
-var redditwebdev = new Array('redditwebdev', 'code', 10, 'http://www.reddit.com/r/developer/', 'Reddit.com/r/developer');
+var redditprogramming = new Array('redditprogramming', 'code', 10, 'https://www.reddit.com/r/programming/', 'Reddit.com/r/programming');
+var redditwebdev = new Array('redditwebdev', 'code', 10, 'https://www.reddit.com/r/developer/', 'Reddit.com/r/developer');
 var hackernews = new Array('hackernews', 'code', 10, 'https://hacker-news.firebaseio.com/v0/topstories', 'https://hacker-news.firebaseio.com/v0/item/', 'http://news.ycombinator.com/', 'Hacker News');
-var redditcoding = new Array('redditcoding', 'code', 10, 'http://www.reddit.com/r/coding/', 'Reddit.com/r/coding');
+var redditcoding = new Array('redditcoding', 'code', 10, 'https://www.reddit.com/r/coding/', 'Reddit.com/r/coding');
 // 1-3
-var redditscience = new Array('redditscience', 'science', 6, 'http://www.reddit.com/r/science/', 'Reddit.com/r/science');
-var newscientist = new Array('newscientist', 'science', 6, 'http://www.reddit.com/r/developer/', 'NewScientist.com');
+var redditscience = new Array('redditscience', 'science', 6, 'https://www.reddit.com/r/science/', 'Reddit.com/r/science');
+var newscientist = new Array('newscientist', 'science', 6, 'https://www.reddit.com/r/developer/', 'NewScientist.com');
 // 2-1
 var learncode = new Array('learncode', 'learn', '', '');
 var learncodegames = new Array('learncodegames', 'learn', '', '');
@@ -23,10 +23,10 @@ var learnjobs = new Array('learnjobs', 'learn', '', '');
 var indeed1 = new Array('indeed1', 'jobs', '', '');
 var indeed2 = new Array('indeed2', 'jobs', '', '');
 // 2-3
-var redditpics = new Array('redditpics', 'entertain', 12, 'http://www.reddit.com/r/pics/', 'Reddit.com/r/pics');
-var reddittil = new Array('reddittil', 'entertain', 8, 'http://www.reddit.com/r/todayilearned/', 'Reddit.com/r/todayilearned');
-var redditask = new Array('redditask', 'entertain', 10, 'http://www.reddit.com/r/askreddit/', 'Reddit.com/r/askreddit');
-var redditvideos = new Array('redditvideos', 'entertain', 10, 'http://www.reddit.com/r/videos/', 'Reddit.com/r/videos');
+var redditpics = new Array('redditpics', 'entertain', 12, 'https://www.reddit.com/r/pics/', 'Reddit.com/r/pics');
+var reddittil = new Array('reddittil', 'entertain', 8, 'https://www.reddit.com/r/todayilearned/', 'Reddit.com/r/todayilearned');
+var redditask = new Array('redditask', 'entertain', 10, 'https://www.reddit.com/r/askreddit/', 'Reddit.com/r/askreddit');
+var redditvideos = new Array('redditvideos', 'entertain', 10, 'https://www.reddit.com/r/videos/', 'Reddit.com/r/videos');
 // 2-4
 //var intp = new Array('intp', 'mbti', 10, 'http://www.reddit.com/r/intp/');
 //var entp = new Array('entp', 'mbti', 10, 'http://www.reddit.com/r/entp/');
