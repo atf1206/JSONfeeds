@@ -87,7 +87,7 @@ function myGetJSON(sourceArray)
             $("." +sourceArray[1]+ "content").empty();
             $.each(data.data.children.slice(0, sourceArray[2]), function (i, post) 
               {
-                $("." +sourceArray[1]+ "content").append("<a href='" +post.data.permalink+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +post.data.url+ "' rel='nofollow' class='bl'>" +post.data.title+ "</a><br>");
+                $("." +sourceArray[1]+ "content").append("<a href='http://www.reddit.com" +post.data.permalink+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +post.data.url+ "' rel='nofollow' class='bl'>" +post.data.title+ "</a><br>");
                 $("." +sourceArray[1]+ "content").append("<div class='divider'></div>");
               }
             );
