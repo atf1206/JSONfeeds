@@ -116,7 +116,7 @@ function myGetNYTimes(sourceArray)
   var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
   url += '?' + $.param({
     'api-key': "3e6e052bf4bc4dc69a4d2236ecf8b89c",
-    'limitToFirst': 2
+    'limitToFirst': 10
   });  
   $.ajax({
     url: url,
@@ -125,7 +125,7 @@ function myGetNYTimes(sourceArray)
       $("." +sourceArray[1]+ "content").empty();
       for (var i = 0; i < sourceArray[2]; i++) {
         //console.log(result["results"][i]["title"]);
-        $("." +sourceArray[1]+ "content").append("<a href='https://news.ycombinator.com/item?id=" +result["results"][i]["url"]+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +result["results"][i]["url"]+ "' rel='nofollow' class='bl'>" +result["results"][i]["title"]+ "</a><br>");
+        $("." +sourceArray[1]+ "content").append("<a href='" +result["results"][i]["url"]+ "' rel='nofollow'><img src='cm.gif' border='0'></a>&nbsp; <a href='" +result["results"][i]["url"]+ "' rel='nofollow' class='bl'>" +result["results"][i]["title"]+ "</a><br>");
         $("." +sourceArray[1]+ "content").append("<div class='divider'></div>");
       }
       $("." +sourceArray[1]+ "content").append("<div class='source'>&nbsp;More at&nbsp;<a href='" +sourceArray[2]+ "' rel='nofollow' class='asource'>" +sourceArray[3]+ "</a></div>");
