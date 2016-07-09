@@ -20,8 +20,8 @@ var learndatascience = new Array('learndatascience', 'learn', '', '');
 var learnlanguages = new Array('learnlanguages', 'learn', '', '');
 var learnjobs = new Array('learnjobs', 'learn', '', '');
 // 2-2
-var indeed1 = new Array('indeed1', 'jobs', '', '');
-var indeed2 = new Array('indeed2', 'jobs', '', '');
+var indeed1 = new Array('indeed1', 'jobs', 'results1', '');
+var indeed2 = new Array('indeed2', 'jobs', 'results2', '');
 // 2-3
 var redditpics = new Array('redditpics', 'entertain', 12, 'https://www.reddit.com/r/pics/', 'Reddit.com/r/pics');
 var reddittil = new Array('reddittil', 'entertain', 8, 'https://www.reddit.com/r/todayilearned/', 'Reddit.com/r/todayilearned');
