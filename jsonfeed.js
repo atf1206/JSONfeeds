@@ -45,8 +45,9 @@ $(document).ready(function () {
 			$("."+tab_id[0]).addClass('current');
 		}
 		else if (tab_id[1] == "jobs") {
-			$('.jobtab').removeClass('current');
-			$("."+tab_id[0]).addClass('current');
+			//$('.jobtab').removeClass('current');
+			//$("."+tab_id[0]).addClass('current');
+			myGetIndeed(tab_id);
 		}
 		else if (tab_id[0] == "nytimes"){
 			myGetNYTimes(tab_id);

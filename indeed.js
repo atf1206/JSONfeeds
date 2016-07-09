@@ -1,22 +1,26 @@
-function myGetIndeed(sourceArray) 
+ function myGetIndeed(sourceArray) 
   {
   var url = "https://indeedpassthrough.herokuapp.com/indeed";
-  url += '?' + 
-  
+  //url += '?' + 
+  //console.log("here");
   $.ajax({
     url: url,
-    method: 'GET',
+    dataType: 'jsonp'
+    //method: 'GET',
     }).done(function(result) {
-      $("#results").empty();
-      for (var i = 0; i < 10; i++) {
-        console.log(result);
-		
-        $("#results1").append("<div class='job'><a target='_blank' href='#' class='jobtitle'></a><span class='company_location'><span class='company'></span> - <span class='location'></span></span></div>");
-        
-      }
-      
+      myPasteIndeed(result);
     }).fail(function(err) {
       throw err;
   });
  }
 	
+function myPasteIndeed(result) {
+    $("#results").empty();
+    var obj = JSON.parse(result);
+    var myobj = obj["response"][0]["results"][0]["result"];
+    for (var i = 0; i < 6; i++) {
+      console.log(obj["response"][0]["results"][0]["result"][i]);
+      
+      $("#results").append("<div class='job'><a target='_blank' href='" +myobj[i]["url"]+ "' class='jobtitle'>" +myobj[i]["jobtitle"]+ "</a><br><span class='company_location'><span class='company'>" +myobj[i]["company"]+ "</span> - <span class='location'>" +myobj[i]["formattedLocation"]+ "</span></span></div>");
+    }
+}
