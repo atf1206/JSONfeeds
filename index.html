@@ -5,15 +5,17 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="jsonfeed.js"></script>
+<script src="indeed.js"></script>
 
 <link rel="stylesheet" type="text/css" href="jsonfeed.css">
+<link rel="stylesheet" type="text/css" href="indeed.css">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="JSON News Feed"> 
 
 </head>
 
-<body onload="myGetNYTimes(nytimes); myGetJSON(redditprogramming); myGetJSON(redditscience); myGetJSON(redditpics);">
+<body onload="myGetNYTimes(nytimes); myGetJSON(redditprogramming); myGetJSON(redditscience); myGetJSON(redditpics); myGetIndeed(indeed1);">
 
 <div style="margin-top:20px;"></div>
 <div class="wrap">
@@ -234,16 +236,16 @@
       
       <div class="jobtab indeed1 tab-content current">
         <div class="" style="font: 14px small Arial;color:#000088;line-height:17px;border: 3px solid #cecddc;width: 310px;">
-			Temporarily disabled -- looking for https substitute
-		  <script type="text/javascript" >
-		  </script>
-        </div>
-      </div>
-    
-      <div class="jobtab indeed2 tab-content">
-        <div class="" style="font: 14px small Arial;color:#000088;line-height:17px;border: 3px solid #cecddc;width: 310px;">
-          <script type="text/javascript">
-		  </script>
+			<div id="indeed_widget_header">Jobs from Indeed</div>
+			<div id="indJobContent" class="">
+				<div id="results">
+				
+				</div>
+			</div>
+			<div id="indeed_link">
+				<a title="Job Search" href="http://www.indeed.com/" target="_new">jobs by <img alt="Indeed" src="http://www.indeed.com/p/jobsearch.gif" style="border: 0;vertical-align: bottom;">
+				</a>
+			</div>
         </div>
       </div>
 
